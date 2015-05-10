@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" data-semver="3.3.2" data-require="bootstrap@3.3.2" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" data-semver="3.3.2" data-require="bootstrap@3.3.2"></script>
+    <script data-require="angular.js@1.3.15" data-semver="1.3.15" src="https://code.angularjs.org/1.3.15/angular.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="educit">
+    <h1 ng-controller="Facturacion">HOLA {{nombre }} {{ verDatos() }}</h1>
+    <form class="form-inline col-xs-6">
+      <div class="form-group">
+        <label for="exampleInputAmount" class="sr-only">Facturacion (en pesos)</label>
+        <div class="input-group">
+          <div class="input-group-addon">ar$</div>
+          <input type="number" placeholder="Facturacion Febrero" id="exampleInputAmount" class="form-control" ng-model="feb" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputAmount" class="sr-only">Facturacion (en pesos)</label>
+        <div class="input-group">
+          <div class="input-group-addon">ar$</div>
+          <input type="number" placeholder="Facturacion Marzo" id="exampleInputAmount" class="form-control" ng-model="mar" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputAmount" class="sr-only">Facturacion (en pesos)</label>
+        <div class="input-group">
+          <div class="input-group-addon">ar$</div>
+          <input type="number" placeholder="Facturacion Abril" id="exampleInputAmount" class="form-control" ng-model="abr" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputAmount" class="sr-only">Facturacion (en pesos)</label>
+        <div class="input-group">
+          <div class="input-group-addon">ar$</div>
+          <input type="number" placeholder="Facturacion Mayo" id="exampleInputAmount" class="form-control" ng-model="may" />
+        </div>
+      </div>
+      <select class="form-control input-lg" ng-model="max">
+        <option value="6000">Categoria B</option>
+        <option value="9000">Categoria C</option>
+        <option value="12000">Categoria D</option>
+        <option value="15000">Categoria E</option>
+      </select>
+      <h4>Facturación total:         <span class="label label-default">{{ feb + mar + abr + may || 0 }}</span>
+      </h4>
+      <h4>Promedio período:         <span class="label label-default">0</span>
+      </h4>
+      <div role="alert" class="alert alert-success">Promedio periodo:         <strong></strong>
+      </div>
+      <div role="alert" class="alert alert-danger">Ud. está excedido de categoría</div>
+    </form>
+  </body>
+
+</html>
