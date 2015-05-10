@@ -1,0 +1,37 @@
+Sergio Minutoli
+sminutoli.it@gmail.com
+http://plnkr.co/users/sminutoli
+--
+
+caniuse.com -> soporte para cada navegador de CSS
+http://kangax.github.io/compat-table/es5/ -> soporte de ECMA Script en los navegadores
+
+--
+CURSO ONLINE PARA COMPLEMENTAR
+https://www.codeschool.com/courses/shaping-up-with-angular-js
+--
+
+--
+ng-app es necesario para decirle a angular que hay una aplicación (empieza a escanear las directivas)
+
+{{ }} expresión (similar a echo() o print() )
+
+ng-model vincula un <input><textarea><select> a una variable
+
+ng-show agrega la clase "ng-hide" cuando da false la expresión
+ng-hide agrega la clase "ng-hide" cuando da true la expresión
+
+ng-if remueve del DOM al elemento si la expresión da false
+
+las versiones "validas html" tienen data- adelante
+data-ng-app
+data-ng-show
+data-ng-if
+
+---
+PLUNKR COMO QUEDÓ
+http://plnkr.co/edit/Msw0X0
+---
+
+
+
