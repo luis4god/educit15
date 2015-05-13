@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase 2</title>
+</head>
+<body>
+	<main>
+		<!-- Details es un contenedor de informacion colapsada, sirve solo para Chrome-->
+		<!-- Se pueden usar varias-->
+		<!-- Atrubuto open sirve para mostrar alguna por default y es boolean-->
+		<details open>
+			<!-- summary le pone el titulo a Details-->
+			<summary>Detalles de Lorem</summary>
+			<h1>Detalles</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at, fugit assumenda laboriosam cupiditate tempora asperiores culpa ipsum temporibus eveniet, debitis corporis fuga modi provident labore, dolore. Veniam, fuga officiis!</p>
+		</details>
+		<!-- time, No hace nada visualmente-->
+		<!-- le da contexto temporal al contenido-->
+		<time datetime="2015-23-04" title="23 de Abril de 2015">Hoy se inicia el programa espacial Argentino</time>
+
+		<!-- mark: texto resaltado o higLith, queda con fondo amarillo. son amigas de strom, em, mark-->
+		<mark></mark>
+
+		<!-- strong: texto resaltado o higLith Mas FUERTE, son amigas de strom, em, mark-->
+		<stron></stron>
+
+		<!-- em: texto resaltado o higLith Suave, son amigas de strom, em, mark-->
+		<em></em>
+
+		<!-- html4 sub: subindice ejemplo escribir H2O-->
+		<sub></sub>
+
+		<!-- html4 sup: supindice ejemplo escribir e=mc2-->
+		<sup></sup>
+
+		<!-- html5 ruby: sirve para hacer anotaciones foneticas para diferentes idiones-->
+		<!-- html5 rt: ruby term-->
+		<!-- html5 rp: ruby parentesis-->
+		<ruby>
+			cell <rt>sel</rt>
+			phone <rt>fon</rt>
+		</ruby>
+
+		<!-- html5 bdo: Bi Direccional OutPut-->
+		<!-- html5 rtl: rtl derecha a izquierda, por defecto es ltr, izquierda a derecha-->
+		<bdo dir="rtl"></bdo>
+		<!-- html5 bdi: Bi Direccional Isolation, solo funciona dentro de bdo y es para las excepciones-->
+		<bdi dir="rtl"></bdi>
+
+		<!-- html5 meter: es una barra de medicion con tres rangos definidos-->
+		<!-- html5 rangos: low-rojo, high-amarillo, optimum-verde -->
+		<meter value="120" min="0" max="200" low="50" high="100" optimum="101">
+			valor: 120
+		</meter>
+
+		<!-- html5 wbr: word break Line, corta palabras largas -->
+		<wbr></wbr>
+
+		<!-- html5 video: genera una reproduccion nativa del browser -->
+		<!-- html5 poster: define una imagen de portada cuadno esta en STOP -->
+		<!-- html5 preload: auto(metadata + un poco del video), none, metadata(solo carga los datos del video) -->
+		<!-- html5 controls: muestra los controles de video -->
+		<!-- html5 autoplay: se autoreproduce el video, ojo con poster -->
+		<!-- html5 mute: silenciado en el inicio -->
+		<!-- html5 loop: se reproduce infinitamente -->
+		<!-- mime: tipo de archivo  -->
+		<video src="" width="" height="" poster="" preload="metadata" controls autoplay mute loop>
+			<!-- formatos ogg, webm, mp4  -->
+			<source>
+			<source>
+			<source>
+		</video>
+
+		<!-- html5 audio: genera una reproduccion nativa del browser igual que video pero sin altura ancho ni poster-->
+		<audio src="">
+			<!-- formatos ogg, wav, mp4  -->
+			<source>
+			<source>
+			<source>
+		</audio>
+
+
+
+	</main>
+</body>
+</html>

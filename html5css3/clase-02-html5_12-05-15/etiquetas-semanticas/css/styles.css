@@ -1,0 +1,44 @@
+@import url(normalize.css);
+
+body{
+	font-family: Tahoma;
+	margin:20px;
+}
+
+h2{
+	background-color: #333;
+	color:#fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 0;
+}
+
+details{
+	margin-bottom: 15px;
+}
+
+summary{
+	outline: none; /*quitamos el recuadro azul que aplica el navegador*/
+}
+mark{
+	/*background-color: transparent;*/
+}
+
+rt, rp{
+	font-size: 13px;
+	color:#E53535;
+	font-style: italic;
+}
+
+meter{
+	width: 200px;
+	height: 30px;
+}
+
+#texto{
+	width: 80%;
+	background-color: #f2f2f2;
+	border: solid 5px #333;
+	margin:auto;
+	padding:0 15px;
+}

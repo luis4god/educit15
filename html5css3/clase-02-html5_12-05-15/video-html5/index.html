@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video con html5</title>
+	<!--[if lte IE 9]>
+   	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<style>
+		body{
+			font-family: Tahoma;
+			margin:20px;
+		}
+
+		h2{
+			background-color: #333;
+			color:#fff;
+			padding: 10px;
+			text-align: center;
+			margin-top: 0;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<h2>Video en HTML5</h2>
+
+	<video controls width="560" height="320" preload="auto" poster="images/portada.jpg" autoplay muted loop>
+		<source src="videos/globos.mp4" type="video/mp4">
+		<source src="videos/globos.ogg" type="video/ogg">
+		<source src="videos/globos.webm" type="video/webm">
+	</video>
+
+
+	<!-- Para convertir videos: http://www.zamzar.com -->
+	
+
+</body>
+</html>

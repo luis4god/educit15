@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Etiquetas semánticas de html5</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lte IE 9]>
+   	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/details.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('details').htmlDetails();
+		});
+	</script> 
+
+</head>
+<body>
+	
+	<h2>details / summary</h2>
+
+	<details open>
+		<summary>Pregunta número 1 - [+] info</summary>
+		<h3>Soy un H3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<a href="#">enlace</a>
+	</details>
+
+	<details>
+		<summary>Pregunta número 2 - [+] info</summary>
+		<h3>Soy un H3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<a href="#">enlace</a>
+	</details>
+
+	<details>
+		<summary>Pregunta número 2 - [+] info</summary>
+		<h3>Soy un H3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente provident cum vitae officiis reiciendis numquam saepe dolore. Tempora, fugiat possimus. Autem aliquid at ipsum deserunt ut expedita earum incidunt?</p>
+		<a href="#">enlace</a>
+	</details>
+
+
+	<h2>time</h2>
+
+	<p><time datetime="2015-04-23" title="23 de abril de 2015">Hoy se lanzó el nuevo apple watch</time> lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam sed, error quae officiis id, quia fugiat. Minus sequi veritatis repellat earum, laudantium magni, voluptatibus in ipsa pariatur deserunt iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eum accusamus illum temporibus sequi esse hic voluptatibus numquam sint, placeat necessitatibus repudiandae reprehenderit maxime vitae deserunt expedita omnis sunt cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione, saepe iusto alias aperiam iste obcaecati. Non saepe et beatae dignissimos, soluta ratione consectetur excepturi in quasi amet, tempora quos.</p>
+
+
+	<h2>mark</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia totam sed, error quae officiis id, quia fugiat. Minus sequi veritatis repellat earum, laudantium magni, voluptatibus in ipsa pariatur deserunt iusto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <mark>SOY UNA PARTE DE TEXTO RESALTADO</mark> Dignissimos eum accusamus illum temporibus sequi esse hic voluptatibus numquam sint, placeat necessitatibus repudiandae reprehenderit maxime vitae deserunt expedita omnis sunt cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ratione, saepe iusto alias aperiam iste obcaecati. Non saepe et beatae dignissimos, soluta ratione consectetur excepturi in quasi amet, tempora quos.</p>
+
+	<h2>ruby / rt / rp</h2>
+
+	<ruby>
+		Cell
+		<rp>[</rp>
+		<rt>sel</rt>
+		<rp>]</rp>
+		phone	
+		<rp>[</rp>
+		<rt>fón</rt>
+		<rp>]</rp>
+	</ruby>
+
+	<br>
+	<br>
+
+	<ruby>Cell<rp>[</rp><rt>sel</rt><rp>]</rp>phone<rp>[</rp><rt>fón</rt><rp>]</rp></ruby>
+
+	<h2>bdo - bdi</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, recusandae debitis iure magni libero consectetur vitae, aspernatur <bdo dir="rtl">HOLA COMO ESTÁN SOY UN TEXTO QUE <bdi>LUEGO VA</bdi> A CAMBIAR SU ORIENTACIÓN</bdo> doloribus quae soluta deserunt voluptatum ducimus, fuga delectus sapiente ratione distinctio vero. Libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloremque hic, natus autem. Ullam quisquam debitis nobis pariatur ipsum obcaecati sint ut! Iure veniam sapiente unde sed cum nemo non.</p>
+
+	<h2>meter</h2>
+
+	<small>Concursante 1:</small>
+	<meter min="0" max="200" value="10" low="50" high="100" optimum="101" title="Votos: 10">
+		Votos: 10
+	</meter>
+
+	<br><br>
+
+
+	<small>Concursante 2:</small>
+	<meter min="0" max="200" value="70" low="50" high="100" optimum="101" title="Votos: 70">
+		Votos: 70
+	</meter>
+
+	<br><br>
+
+	<small>Concursante 3:</small>
+	<meter min="0" max="200" value="120" low="50" high="100" optimum="101" title="Votos: 120">
+		Votos: 120
+	</meter>
+
+	<br><br>
+
+	<small>Concursante 4:</small>
+	<meter min="0" max="200" value="250" low="50" high="100" optimum="101" title="Votos: 250">
+		Votos: 250
+	</meter>
+
+
+	<h2>wbr</h2>
+
+	<section id="texto">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur OTO<wbr>RRINO<wbr>LARIN<wbr>GOLO<wbr>GIA cupiditate doloribus aliquam, iste architecto aperiam dolor quia unde deserunt. Consequuntur necessitatibus saepe, nesciunt delectus voluptatum perferendis odit hic quis autem.</p>
+	</section>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
