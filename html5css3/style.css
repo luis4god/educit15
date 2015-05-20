@@ -1,0 +1,41 @@
+/* 95% de compantilidad 2015-05
+
+prefijos
+
+-webkit-  chrome, safari
+
+-moz-	mozilla
+
+-o- Opera
+
+AYUDA http://caniuse.com/
+
+*/
+
+border-radius: 10;
+box-sizing: border-box;
+			content-box;
+
+opacity: 0.50;
+
+/*MODELOS DE COLOR
+
+rgb / rgba
+hsl / hsla
+
+*/
+
+
+/* Sombras
+desplasamiento en el horizontal, + derecha - izquierda;
+desplasamiento en el vertical, + abaja - arriba;
+blur o desenfoque: en pixeles, + px mas clara, - px mas solida;
+color;
+
+se puede usar mas de una sombra separando por comas.
+
+se puede poner sombras iternas con el atributo inset
+
+*/
+
+box-shadow: x y blur color;

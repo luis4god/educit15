@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Propiedades nuevas de CSS3</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	
+	<h2>box-sizing</h2>
+
+	<section class="caja"></section>
+
+	<section class="caja relleno borde sizing">
+		con box-sizing: border-box;
+	</section>
+
+	<section class="caja relleno borde">
+		sin box-sizing: border-box;
+	</section>
+
+
+	<h2>border-radius</h2>
+	<section class="caja-2">
+		sin border-radius
+	</section>
+
+	<section class="caja-2 br-1">
+		border-radius: 20px;
+	</section>
+
+	<section class="caja-2 br-2">
+		border-radius: 20px 60px;
+	</section>
+
+	<section class="caja-2 br-3">
+		border-radius: 0 30px 80px 10px;
+	</section>
+
+	<section class="caja-2 br-4">
+		border-radius: 95px;
+	</section>
+
+	<section class="pelota"></section>
+
+	<section class="pelota">
+		<img src="images/about-us.jpg" height="300" width="400" alt="nosotros">
+	</section>
+
+
+	<h2>opacity</h2>
+
+	<section class="caja-2">
+		sin opacity
+	</section>
+
+	<section class="caja-2 op-1">
+		opacity:0.5;
+	</section>
+
+	<section class="caja-2 op-2">
+		opacity:0.3;
+	</section>
+
+	<section class="caja-2 op-3">
+		opacity:0.1;
+	</section>
+
+
+	<h2>rgb / rgba</h2>
+
+	<section class="caja-2">
+		sin rgba
+	</section>
+
+	<section class="caja-2 rgb-1">
+		background-color: rgba(104,161,238, 0.5);
+	</section>
+
+	<section class="caja-2 rgb-2">
+		background-color: rgba(104,161,238, 0.3);
+	</section>
+
+	<section class="caja-2 rgb-3">
+		background-color: rgba(104,161,238, 0.7);
+		en rollover
+	</section>
+
+	<h2>hsl / hsla</h2>
+	<section class="caja-2">
+		sin hsla
+	</section>
+
+	<section class="caja-2 hsl-1">
+		background-color:hsla(214, 20%, 67%, 1);
+	</section>
+
+	<section class="caja-2 hsl-2">
+		background-color:hsla(214, 80%, 90%, 1);
+	</section>
+
+
+	<h2>box-shadow</h2>
+
+	<section class="caja-2">
+		sin box-shadow
+	</section>
+
+	<section class="caja-2 bx-1">
+		box-shadow: 5px 5px 15px #000;
+	</section>
+
+	<section class="caja-2 bx-2">
+		box-shadow: <br>
+		5px 5px 15px #000,<br>
+		-10px -10px 5px #f00;
+	</section>
+
+	<section class="caja-2 bx-3">
+		box-shadow: <br>
+		5px 5px 15px #000,<br>
+		-10px -10px 5px #f00,<br>
+		8px 8px 12px rgba(0,0,0,0.5) inset;
+	</section>
+
+
+	<section class="caja-2 bx-4">
+		box-shadow: 0 0 15px #f00;
+	</section>
+
+
+	<h2>text-shadow</h2>
+
+	<h1>Soy un H1 con sombra</h1>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

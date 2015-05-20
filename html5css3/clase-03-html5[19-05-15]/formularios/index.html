@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios con Html5</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	
+	<h2>Formularios con HTML5</h2>
+
+	<form>
+		
+		<label>Nombre completo:</label>
+		<input type="text" required autofocus>
+		<br><br>
+
+		<label>Correo electrónico:</label>
+		<input type="email" required placeholder="user@email.com">
+		<br><br>
+
+		<label>Tu página web:</label>
+		<input type="url" required placeholder="http://">
+		<br><br>
+
+		<label>Número de contacto:</label>
+		<input type="tel">
+		<br><br>
+
+		<label>Buscador:</label>
+		<input type="search">
+		<br><br>
+
+		<label>Cuántos vienen?</label>
+		<input type="number" min="2" max="20" value="2" step="2">
+		<br><br>
+
+		<label>Cuántos litros llevas?</label>
+		<input type="number" min="1" max="5" value="1" step="0.25">
+		<br><br>
+
+		<label>Calificá nuestro servicio:</label>
+		<input type="range" min="0" max="10" value="5">
+		<br><br>
+
+		<label>A qué hora venís?</label>
+		<input type="time" value="18:00" step="1800">
+		<br><br>
+
+		<label>Cuando llegás?</label>
+		<input type="date" value="2015-05-15">
+		<br><br>
+
+		<label>Elegí una semana:</label>
+		<input type="week">
+		<br><br>
+
+		<label>Elegí un mes:</label>
+		<input type="month">
+		<br><br>
+
+		<label>Elegí un color:</label>
+		<input type="color" value="#EB17C6" list="colores">
+		<br><br>
+
+		<datalist id="colores">
+			<option value="#E41616" label="Rojo">
+			<option value="#356FE5" label="Celeste">
+			<option value="#DB6915" label="Naranja">
+		</datalist>
+
+
+		<label>Cómo llegaste a nosotros:</label>
+		<input type="url" list="como">
+		<br><br>
+
+		<datalist id="como">
+			<option value="http://www.facebook.com" label="Facebook">
+			<option value="http://www.twitter.com" label="Twitter">
+			<option value="http://www.google.com" label="Google">
+		</datalist>
+
+		<input type="submit" value="ENVIAR">
+		<input type="reset" value="BORRAR">
+
+	</form>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
