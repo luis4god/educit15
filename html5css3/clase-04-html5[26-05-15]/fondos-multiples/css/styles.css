@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body{
+	background-color: #F4EBEB;
+	font-family: Tahoma;
+	font-size: 13px;
+}
+
+h2{
+	background-color: #333;
+	color:#fff;
+	padding: 15px;
+	text-align: center;
+}
+
+.caja{
+	width: 90%;
+	height: 450px;
+	margin:30px auto;
+	border:solid 5px #333;
+	background: 
+		url(../images/sol.png) no-repeat 95% 30px,
+		url(../images/cesped.png) repeat-x left bottom,
+		url(../images/nube.png) #6CD0E5;
+		/*url(../images/nube.png) no-repeat 20% 45%,
+		url(../images/nube.png) no-repeat 80% 5%*/
+}

@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: Tahoma;
+	font-size: 13px;
+	background: url(../images/cielo.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+h2{
+	background-color: #333;
+	color:#fff;
+	padding: 15px;
+	text-align: center;
+}
+
+.caja{
+	width: 650px;
+	height: 250px;
+	margin:30px auto;
+	border:solid 5px #333;
+	background:url(../images/cesped.png) no-repeat;
+}
+
+.bs-1{
+	background-size: 300px 120px;
+}
+
+.bs-2{
+	background-size: 300px;
+}
+
+.bs-3{
+	background-size: 80% 45%;
+}
+
+.bs-4{
+	background-size: 80%;
+}
+
+.bs-5{
+	background-size: cover;
+}
+
+.bs-6{
+	background-size: contain;
+}
+

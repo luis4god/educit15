@@ -1,0 +1,27 @@
+﻿COLORES:
+
+- Rojo oscuro:#B20000
+- Rojo claro: #E84D3E
+
+====================================
+
+Kitchening - Lorem Ipsum Dolet Siet Amet
+Avenida Santafé 4678 - CABA
+3456 7889 - 11 6789 5040
+info@kitchening.com.ar
+
+====================================
+
+HOME
+NOSOTROS
+CARTA
+SUCURSALES
+CONTACTO
+
+====================================
+
+Reserva ahora / Cafe y medialunas / Cafe y medialunas
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dignissimos, quibusdam molestias beatae reiciendis omnis vero aliquid quae illum explicabo rem dicta!
+
+INGRESAR

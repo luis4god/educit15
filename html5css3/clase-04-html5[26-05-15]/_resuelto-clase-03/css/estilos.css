@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Documen*/
+
+*{
+	margin: 0; 
+	padding: 0; 
+}
+body{
+	font-family: 'Tahoma'; 
+	background: 
+		url(../images/bg-left.png) repeat-y, 
+		url(../images/bg-right.png) repeat-y right top, 
+		url(../images/bg.png);
+	}
+.cleaner{
+	clear: both;
+}
+
+#formulario{
+	width: 400px; 
+	margin:20px auto; 
+	padding:15px; 
+	background:rgba(255,255,255,.4); 
+	border-radius: 20px; 
+	-webkit-border-radius: 20px;
+}
+
+#formulario form{
+	width:315px; 
+	margin:auto;
+}
+h1{
+	margin-bottom: 15px; 
+	font-size: 24px; 
+	text-transform: uppercase; 
+	color: #d8ecd5; 
+	text-shadow:2px 2px 5px #000;
+}
+p{
+	font-size:13px; 
+	line-height: 17px; 
+	text-align: justify; 
+	color:#fff;  
+	margin-bottom: 25px;
+}
+label{
+	font-size: 14px; 
+	display: block; 
+	color:#333; 
+	margin-bottom: 3px; 
+}
+
+.short{
+ 	/*esta regla es para los rótulos cortos*/
+	float:left; 
+	width:140px;
+ }
+ .right, .campo-short.right{
+ 	/*esta regla es para los rótulos y campos cortos que flotan a la derecha*/
+	float:right; 
+ }
+
+.campo{
+	width: 300px; 
+	height: 25px; 
+	border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	margin-bottom: 15px; 
+	border: 1px solid #6b0101; 
+	padding:5px; 
+	box-shadow: 2px 2px 5px 0 #000; 
+	-webkit-box-shadow: 2px 2px 5px 0 #000; 
+	font-family: inherit; /*esto hace que el campo tome la misma tipografía que se asigno en el body*/
+	outline: none; /*con esto se elimina la línea que por defecto asignan algunos browsers a los campos*/
+}
+.campo:focus{
+	background:#eee4e4;
+}
+.campo-short{
+	/*esta regla es para los campos cortos*/
+	float:left;
+	width:130px;
+}
+
+.boton{
+	border: none;
+	padding:10px 25px; 
+	background:#6b0101; 
+	display:block; 
+	margin:auto; 
+	color:#fff; 
+	font-family: inherit; /*esto hace que el campo tome la misma tipografía que se asigno en el body*/
+	border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	cursor: pointer; /*con esto hacemos que al hacer rollover, cambie el cursor de "flecha" a "manita"*/
+	margin-top: 10px;
+}
+.boton:hover{
+	background:#eee4e4; 
+	color:#6b0101;
+	-webkit-box-shadow: 2px 2px 5px 0 #000; 
+	box-shadow: 2px 2px 5px 0 #000;
+}

@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,700,400);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #EFEEEE;
+}
+
+h2{
+	background-color: #333;
+	color:#fff;
+	padding: 15px;
+	text-align: center;
+	font-weight: 200;
+}
+
+code{
+	display: block;
+	width: 150px;
+	padding: 15px;
+	background-color: #E3DFDF;
+	border:solid 1px #666;
+	border-radius: 10px;
+	margin:20px auto;
+	font-size: 13px;
+	text-align: center;
+}
+
+
+#caja-1, #caja-2, #caja-3{
+	width: 350px;
+	padding: 15px;
+	background-color: #F2F1B4;
+	margin:30px auto;
+	border:solid 5px #666;
+}
+
+/*hijos directos*/
+#caja-1 > p{
+	text-align: right;
+	color:#12E612;
+	font-weight: 700;
+}
+
+/*hermanos adyacentes*/
+#caja-2 h3 + p{
+	background-color: #000;
+	color:#fff;
+	padding: 5px;
+	text-align: center;
+}
+
+/*hermanos generales*/
+#caja-3 h3 ~ p{
+	font-style: italic;
+	color:#f00;
+}

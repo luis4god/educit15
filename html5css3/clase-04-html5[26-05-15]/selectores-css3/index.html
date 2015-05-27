@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores nuevos de CSS3</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<h2>hijos directos</h2>
+
+	<code>#caja-1 > p</code>
+
+	<section id="caja-1">
+		<p>Soy hijo directo de #caja-1</p>
+		<p>Soy hijo directo de #caja-1</p>
+		<p>Soy hijo directo de #caja-1</p>
+		<article>
+			<p>Soy hijo directo de article</p>
+		</article>
+		<p>Soy hijo directo de #caja-1</p>
+	</section>
+
+
+	<h2>hermanos adyacentes (seguidos)</h2>
+
+	<code>#caja-2 h3 + p</code>
+
+	<section id="caja-2">
+		<p>Soy hijo directo de #caja-2</p>
+		<h3>Soy un H3</h3>
+		<p>Soy hermano seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+		<h3>Soy un H3</h3>
+		<p>Soy hermano seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+	</section>
+
+
+
+	<h2>hermanos generales</h2>
+
+	<code>#caja-3 h3 ~ p</code>
+
+	<section id="caja-3">
+		<p>Soy hijo directo de #caja-3</p>
+		<h3>Soy un H3</h3>
+		<a href="#">Soy un enlace</a>
+		<article>
+			<p>Soy hijo de article</p>
+			<p>Soy hijo de article</p>
+		</article>
+		<p>Soy hermano NO seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+		<p>Soy hermano NO seguido de h3</p>
+	</section>
+
+	
+</body>
+</html>

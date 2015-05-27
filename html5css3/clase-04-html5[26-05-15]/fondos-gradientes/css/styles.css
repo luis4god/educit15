@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: Tahoma;
+	font-size: 13px;
+	background: #febf01; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #febf01 0%,#febf01 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #febf01 0%,#febf01 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febf01', endColorstr='#febf01',GradientType=0 ); /* IE6-9 */
+}
+
+h2{
+	background-color: #333;
+	color:#fff;
+	padding: 15px;
+	text-align: center;
+}
+
+.menu{
+	width:900px;
+	margin:50px auto;
+	list-style: none;
+}
+.menu li{
+	display: inline-block;
+	width: 130px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	background: #deefff; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #deefff 0%,#98bede 100%);
+	background: linear-gradient(to bottom,  #deefff 0%,#98bede 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
+	border:solid 1px #0B97BA;
+	border-radius: 30px;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+}
+.menu li:hover{
+	background: -webkit-linear-gradient(top,  #98bede 0%,#deefff 100%);
+	background: linear-gradient(to bottom,  #98bede 0%,#deefff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98bede', endColorstr='#deefff',GradientType=0 ); /* IE6-9 */
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.menu a{
+	display: block;
+	text-decoration: none;
+	color:#000;
+}
+
+.caja-1{
+	width: 95%;
+	height: 250px;
+	margin:30px auto;
+	border: solid 5px #333; 
+	background: #00a2d3; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #00a2d3 0%,#490027 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom,  #00a2d3 0%,#490027 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a2d3', endColorstr='#490027',GradientType=0 ); /* IE6-9 */
+}
+
+.caja-2{
+	width: 250px;
+	height: 250px;
+	margin:30px auto;
+	border: solid 5px #333; 
+	background:rgba(168,181,0,1);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(168,181,0,1) 24%,rgba(104,177,12,1) 53%,rgba(0,170,31,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: radial-gradient(ellipse at center,  rgba(168,181,0,1) 24%,rgba(104,177,12,1) 53%,rgba(0,170,31,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8b500', endColorstr='#8000aa1f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/*
+from psd to css:
+http://css3ps.com/
+*/

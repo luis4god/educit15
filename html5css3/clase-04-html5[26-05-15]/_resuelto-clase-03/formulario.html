@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario con Html5</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<section id="formulario">
+		<h1>Formulario de Reserva</h1>
+		<p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero dentevil vultus comedat cerebella viventium.</p>
+		<form>
+			<label>Nombre completo:</label>
+			<input type="text" placeholder="Escribí tu nombre" autofocus required class="campo">
+
+			<label>Correo electrónico:</label>
+			<input type="email" required class="campo" placeholder="@">
+
+			<label class="short">Teléfono:</label>
+			<label class="short right">Website:</label>
+
+			<input type="tel" required class="campo campo-short">			
+			<input type="url" required class="campo campo-short right" placeholder="http://">
+
+			<div class="cleaner"></div>
+
+			<label>Fecha de llegada:</label>
+			<input type="date" value="2014-10-31" required class="campo">
+
+			<label class="short">Hora de llegada:</label>
+			<label class="short right">Días de permanencia:</label>
+
+			<input type="time" value="08:30" step="900" required class="campo campo-short">			
+			<input type="number" value="4" step="2" min="4" max="20" required class="campo campo-short right">
+
+			<div class="cleaner"></div>
+
+			<input type="submit" value="RESERVAR" class="boton">
+		</form>
+	</section>
+</body>
+</html>

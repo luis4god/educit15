@@ -1,0 +1,104 @@
+/*
+FONDOS
+
+multiples y escalables
+
+*/
+
+/*tips1 plugins PARALAX jQuery */
+
+background-image: url(img/fondo.jpg);
+background-repeat: repeat; /*repete-y; repeate-x ; no-repeate*/
+background-position: x y;/*x=leste/center/right -- y=top/center/botton*/
+background-attachment: /* comportamiento ante el scroll*/
+background-color: /*define color de fondo*/
+
+background: #f00 url() fixed;
+
+/*
+TAMAÑOS
+
+
+*/
+
+background-size: 300px 120px; /* define un tamaño de fondo, se puede escribir un valor para imagenes proporcionales o DOS valores*/
+background-size: 95%;
+background-size: cover; /* opuca toda el area de su contenedor y no se deforma*/
+background-size: contain; /* opuca toda el area de su contenedor y se ajusta al alto de su contenedor*/
+
+/*
+GRADIENTES
+horizontal:;
+vertical:;
+diagonal arriba:;
+diagonal abajo:;
+radial:;
+
+tip2 www.colorzilla.com/gradient-editor
+*/
+
+background: linear-gradient(#f00, #000);
+background: -web-kit-linear-gradient(left, #f00, right, #000);
+
+
+
+/*
+WEBFONTS
+@font-face
+implementa la tipografias
+
+1) google fonts = repositorio de fonts (600 aprox) www.google.com.ar/fonts
+	1. eligo la typogracia
+
+	2.
+	- <link>
+	- @import
+
+	3. implementar la typografia
+	- font-family
+
+
+
+2) propia tipografica
+	1. descargar typo
+		.ttf   -> chrome safari opera mozilla
+		.eot   -> IE-X
+		.svg   -> chrome safari(iOS)
+		.woff  -> (busca ser el standar) W3C + pesado
+		.woff2 -> el + liviando de todos
+
+tip3 www.fontsquirrel.com (ardilla) -> webfont generator => 5 formatos + CSS
+
+*/
+
+/**
+SELECTORES en CCS3 + control
+
+css2
+	- h2{}
+
+	- .mi-class{}
+
+	- #mi_id{}
+
+	- li a {}
+
+	- #caja p {}
+
+	- .caja1 h2 {}
+
+	- .caja1 .rojo {}
+CSS3
+	Hijos directos
+	-	#caja > p {}
+
+	Hermanos adyacentes ( hermanos seguidos)
+	-	h2 + p {}
+	-	#caja > h2 + p {}
+
+	hermanos generales
+	-	h2 ~ p {}
+	-	#caja h2 ~ p {}
+
+*/
+
