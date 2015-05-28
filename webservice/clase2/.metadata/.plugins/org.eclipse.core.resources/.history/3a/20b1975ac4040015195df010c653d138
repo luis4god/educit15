@@ -1,0 +1,7 @@
+package ar.com.laborglobal.bodega.servicio;
+
+public class VinotecaImpl {
+	
+	public String obtenerBodega();
+
+}

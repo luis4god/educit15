@@ -1,0 +1,72 @@
+<definitions
+	name="VinotecaDefinitions"
+        
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	
+        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0xsd"
+	xmlns:wsp="http://www.w3.org/ns/ws-policy"
+	xmlns:wsp1_2="htpp://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	
+        xmlns:tns="http://service.app.educacionit.com.ar/"
+	targetNamespace="http://service.app.educacionit.com.ar/">
+
+	<types>
+		<xsd:schema targetNamespace="http://service.app.educacionit.com.ar/" >
+		
+			<xsd:element name="ObtenerBodega" type="tns:ObtenerBodegaType"/>
+			<xsd:element name="ObtenerBodegaResponse" type="tns:ObtenerBodegaResponseType"/>
+
+			<xsd:complexType name="ObtenerBodegaType">
+				<xsd:sequence>
+					<xsd:element name="nombreDelVino" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="ObtenerBodegaResponseType">
+				<xsd:sequence>
+					<xsd:element name="nombreBodega" type="xsd:string" minOccurs="0" />
+				</xsd:sequence>
+			</xsd:complexType>
+	
+		</xsd:schema>
+	</types>
+
+	<message name="ObtenerBodegaMensaje">
+		<part name="parameters" element="tns:ObtenerBodega"/>
+	</message>
+
+	<message name="ObtenerBodegaResponseMensaje">
+		<part name="parameters" element="tns:ObtenerBodegaResponse"/>
+	</message>
+
+	<portType name="ServicioVinotecaPortType">
+		<operation name="ObtenerBodega">
+			<input message="tns:ObtenerBodegaMensaje"/>
+			<output message="tns:ObtenerBodegaResponseMensaje"/>
+		</operation>
+	</portType>
+
+	<binding name="ServicioVinotecaPortBinding" type="tns:ServicioVinotecaPortType">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+		<operation name="ObtenerBodega">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+
+	<service name="VinotecaWS">
+		<port name ="ServicioVinotecaPort" binding="tns:ServicioVinotecaPortBinding">
+			<soap:address location="http://localhost:8080/JavaWebServicesApp/ServicioVinoteca"/>
+		</port>
+	</service>
+</definitions>
+
+		

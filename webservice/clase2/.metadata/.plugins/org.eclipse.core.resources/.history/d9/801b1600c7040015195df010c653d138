@@ -1,0 +1,12 @@
+package ar.com.laborglobal.bodega.servicio.impl;
+
+import ar.com.laborglobal.bodega.servicio.Vinoteca;
+
+public class VinotecaImpl implements Vinoteca {
+
+	@Override
+	public String obtenerBodega(String bodega) {
+		return bodega;
+	}
+
+}

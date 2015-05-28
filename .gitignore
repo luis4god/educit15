@@ -2,5 +2,16 @@
 .project
 .settings/
 */target/**
+*/RemoteSystemsTempFiles/**
+*/Servers/**
+*./metadata/**
 **.jar
 **.class
+/webservice/clase2/SimpleWebService/nbproject/private/
+/webservice/clase2/SimpleWebService/build/
+/webservice/clase2/SimpleWebService/dist/
+/webservice/clase2/JavaWS-Clase1-TopDown/build/
+/webservice/clase2/JavaWS-Clase1-TopDown/nbproject/private/
+/webservice/clase2/ClientWebService/nbproject/private/
+/webservice/clase2/ClientWebService/build/
+/webservice/clase2/ClientWebService/dist/
