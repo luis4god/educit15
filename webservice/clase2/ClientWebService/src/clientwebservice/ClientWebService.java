@@ -56,7 +56,7 @@ public class ClientWebService {
             GlobalWeatherSoap globalWeatherSoap = gw.getGlobalWeatherSoap();
             
             String citiesByCountry = globalWeatherSoap.getCitiesByCountry("Argentina");
-            
+           
              System.out.println("citiesByCountry="+citiesByCountry);
             
         } catch (MalformedURLException ex) {
