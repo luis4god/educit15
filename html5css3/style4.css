@@ -102,3 +102,19 @@ CSS3
 
 */
 
+/*
+Selector de Atributos
+
+contexto
+img[alt]{ }
+
+input[type=text]{ }
+
+input[type=submit]{ }
+
+a[href^=http]{ }
+
+a[href$=html]{ }
+
+*/
+

@@ -1,0 +1,27 @@
+article p:nth-child(2n) {
+	background-color: #F00
+}
+.caja{
+	width: 45px;
+	height: 45px;
+	border: solid 1px #F00;
+}
+
+
+.45{
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: left top;
+}
+
+.trasla:hover{
+	-webkit-transform: traslate(50px, 50px);
+}
+
+.scale:hover{
+	-webkit-transform: scale(1, 0.5)
+}
+
+.trans:hover{
+	transition: 1s;
+}
+

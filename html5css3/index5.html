@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style5.css">
+</head>
+<body>
+	<main>
+		<secction>
+			<header>Animaciones</header>
+			<article>
+				<h3>@keyframes</h3>
+				<p>creo la animacion</p>
+				<p>@-webkit-keyframes colores { 
+					0%{background-color: violet;}
+					25%{background-color: blue;}
+					50%{background-color: orange;}
+					75%{background-color: red;}
+					100%{background-color: black;}
+
+				}</p>
+				<p>aplicar animacion</p>
+				<p>animation-name: colores;</p>
+				<p>animation-duration: 5s;</p>
+				<p>animation-timming-function: ease*</p>
+				<p>animation-delay: 0s;</p>
+				<p>animation-iteration-count: 13 or infinite;</p>
+				<p>animation-direction: normal* or alternate (alternate dublica el count);</p>
+				<p>animation: name* duracion* time delay count direction</p>
+			</article>
+		</secction>
+		<secction>
+			<header>Transiciones cambio de estado prograsivo</header>
+			<article>
+				<h3>transition:</h3>
+				<p>transition: propiedad duracion aceleracion;</p>
+				<p>propiedad- ejemplo background-color</p>
+				<p>duracion- 1s o 1000ms</p>
+				<p>aceleracion- ease, linear, ease-in, ease-out, ease-in-out</p>
+				<p>se separa por comas para varias porpiedades o se pone la palabra "all"</p>
+				<p>por defecto all* ease*</p>
+				<div class="caja trans"></div>
+			</article>
+			<article>
+				<h3></h3>
+				<p></p>
+			</article>
+			<article>
+				<h3></h3>
+				<p></p>
+			</article>
+		</secction>
+		<secction>
+			<header>
+				tranformaciones
+			</header>
+			<article>
+				<h3>Rotar</h3>
+				<p>-webkit-transform: rotate(45deg)</p>
+				<p>-webkit-transform-origin: left-center*-right top-center*-botton</p>
+				<div class="caja"></div>
+			</article>
+			<article>
+				<h3>Escalar</h3>
+				<p>-webkit-transform: scale(x, y)</p>
+				<p>x width - y height</p>
+				<p>-webkit-transform: scale(x)</p>
+				<p>ambos</p>
+				<div class="caja scale"></div>
+			</article>
+			<article>
+				<h3>Trasladar</h3>
+				<p>-webkit-transform: traslate(x, y) px or %</p>
+				<div class="caja trasla"></div>
+			</article>
+		</secction>
+		<secction>
+			<p title="hoy saque a pasear a mi perro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut mollitia earum doloremque, officiis vero fugit error culpa alias amet. Quasi neque culpa maxime nesciunt, nisi nobis minus accusantium enim esse!</p>
+		</secction>
+		<secction>
+			<header><h2>Pseudos Selectores</h2></header>
+			<article>
+				<h3>:last-child</h3>
+				<p>estilo al ultimo hijo</p>
+				<p>ul li:lastchild{}</p>
+			</article>
+			<article>
+				<h3>:nth-child</h3>
+				<p>estilo al hijo especifico</p>
+				<p>ul li:nth-child(5){}</p>
+				<p>solo para los pares / impares</p>
+				<p>ul li:nth-child(odd){}</p>
+				<p>ul li:nth-child(even){}</p>
+				<p>solo para los n - con operaciones numericas</p>
+				<p>ul li:nth-child(3n){}</p>
+				<p>estilo cada 4 elementos empezando por el 3</p>
+				<p>ul li:nth-child(4n + 3){}</p>
+			</article>
+			<article>
+				<h3>:nth-last-child</h3>
+				<p>primer elemento</p>
+			</article>
+			<article>
+				<h3>:first-of-type</h3>
+				<p>estilo a primer elemento de su tipo</p>
+				<p>secction p {}</p>
+			</article>
+			<article>
+				<h3>:last-of-type</h3>
+				<p>estilo a ultimo elemento de su tipo</p>
+				<p>secction p {}</p>
+			</article>
+			<article>
+				<h3>::selection</h3>
+				<p>estilo a la seleccion de text</p>
+				<p>::selection{}</p>
+			</article>
+		</secction>
+	</main>
+</body>
+</html>
