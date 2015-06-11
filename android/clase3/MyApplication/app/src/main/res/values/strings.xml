@@ -13,5 +13,9 @@
     <string name="add">Agregar</string>
     <string name="list">Listar</string>
     <string name="titleProduct">Inserte un Producto</string>
+    <string name="action_version">Ver version</string>
+    <string name="title_activity_list_product">ListProduct</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>

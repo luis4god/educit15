@@ -1,6 +1,10 @@
 package com.example.educacionit.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,12 +26,22 @@ public class MainActivity extends ActionBarActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Hola como estas?", Toast.LENGTH_LONG).show();
-
                 Intent i = new Intent();
                 i.setClass(v.getContext(),Add_activity.class);
 
                 i.putExtra("title", "Agrega un Producto");
+
+                startActivity(i);
+            }
+        });
+
+        Button btnList = (Button) findViewById(R.id.btn_list);
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setClass(v.getContext(),ListProduct.class);
 
                 startActivity(i);
             }
@@ -50,8 +64,21 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+
+        switch (id){
+            case R.id.action_version:
+                try {
+                    String a = getPackageManager().getPackageInfo(getPackageName(),0).versionName;
+                    Toast.makeText(this, "Version: " + a, Toast.LENGTH_LONG).show();
+                }catch(PackageManager.NameNotFoundException e){
+                    e.printStackTrace();
+                }
+               break;
+            case R.id.action_settings:
+                Toast.makeText(this, "Te debo los Settings", Toast.LENGTH_LONG).show();
+                SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(this);
+
+                break;
         }
 
         return super.onOptionsItemSelected(item);
