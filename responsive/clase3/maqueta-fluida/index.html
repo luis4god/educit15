@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Maqueta Fluida</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div id="container">
+	
+		<figure class="logo">
+			<img src="images/logo.jpg"  alt="logo de la empresa">
+		</figure>
+
+		<a href="javascript:;" class="hamburger-icon"><span>menu</span></a>
+
+		<nav>
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">quienes</a></li>
+				<li><a href="#">servicios</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">sucursales</a></li>
+				<li><a href="#">contacto</a></li>
+			</ul>	
+		</nav>
+
+		<div id="banner">
+			<img src="images/img-banner.jpg" alt="banner de la web">
+		</div>
+
+		<div id="video">
+			<iframe src="https://www.youtube.com/embed/VJmvnfUKZ2I" allowfullscreen></iframe>
+		</div>
+
+
+		<div id="profile-box">
+			<h2>Lorem ipsum amet</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+
+			<figure>
+				<img src="images/img-profile-1.jpg" alt="perfil hombre">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-2.jpg" alt="perfil mujer">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-1.jpg" alt="perfil hombre">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-2.jpg" alt="perfil mujer">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-1.jpg" alt="perfil hombre">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-2.jpg" alt="perfil mujer">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-1.jpg" alt="perfil hombre">
+			</figure>
+
+			<figure>
+				<img src="images/img-profile-2.jpg" alt="perfil mujer">
+			</figure>
+		</div>
+
+		<div id="vip-products">
+			<div class="product">
+				<img src="images/img--pdto-1.jpg" alt="producto 1">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+			<div class="product">
+				<img src="images/img--pdto-2.jpg" alt="producto 2">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+			<div class="product">
+				<img src="images/img--pdto-3.jpg" alt="producto 3">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+
+			<div class="product">
+				<img src="images/img--pdto-2.jpg" alt="producto 2">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+
+			<div class="product">
+				<img src="images/img--pdto-3.jpg" alt="producto 3">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+
+			<div class="product">
+				<img src="images/img--pdto-1.jpg" alt="producto 1">
+				<h2>Lorem ipsum amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In modi, quo, vel illum qui provident voluptas? Magni totam.</p>
+				<a href="#" title="ver más">ver más</a>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Quienes</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Sucursales</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
+
+
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+	  $(".hamburger-icon").click(function(){
+	      if($("nav").is(":hidden")){
+	         $("nav").slideDown('fast');
+	      }else{
+	         $("nav").slideUp('fast');
+	      }  
+	   });
+	</script>
+</body>
+</html>

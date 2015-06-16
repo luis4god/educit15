@@ -1,0 +1,122 @@
+﻿::: Viewport :::
+El viewport es el área visible de nuestro navegador 
+	
+	• Es un nuevo meta que se declara en el <head> para que los dispositivos no alteren el zoom declarado por la web.
+
+	• Configuración Básica
+		<meta name="viewport" content="width=device-width"> [responsive]
+		<meta name="viewport" content="width=1024"> [no responsive]
+
+			+ width=device-width [ancho definido por la resolución de salida]
+			+ width=1024 [siempre abre en 1024px]
+
+	• Valores adicionales:
+		
+		+ initial-scale [escala inicial - es un # real, de 0.1 en adelante - 1 no escala]
+		+ minimun-scale [escala mínima - es un # real, de 0.1 en adelante - 1 no escala]
+		+ maximun-scale [escala máxima - es un # real, de 0.1 en adelante - 1 no escala]
+		+ user-scalable [yes | no - define si el usuario puede escalar]
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4, user-scalable=yes">
+
+		<meta name="viewport" content="width=device-width, maximum-scale=3">
+
+
+	• Tags adicionales
+
+		+ <meta name="MobileOptimized" content="320"> [Para que resolución fue optimizada la web]
+
+		+ <link rel="shortcut icon" href="favicon.ico"> [Ícono de inicio Android]
+		
+		+ <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png"> [Ícono de inicio en iOs]
+		  (sizes -> 72x72 | 114x114)
+
+
+
+
+::: Media Queries :::
+Son una serie de condiciones que pueden aplicarse a nuestras hojas de estilo CSS para que, según la resolución de salidadel dispositivo, la web se adapte a la misma. Los Media Queries expanden el rol del atributo media, que controla como se aplican los estilos. 
+
+	• Usos en <link>
+
+		+ <link rel="stylesheet" media="screen" href="screen-styles.css">
+		
+		+ <link rel="stylesheet" media="print" href="print-styles.css">
+
+		+ <link rel="stylesheet" media="only screen and (max-width: 400px)" href="phone-styles.css">
+
+
+
+	• Como @import en el CSS
+
+		+ @import url("phone.css") only screen and (max-width:400px);
+
+
+
+	• En el CSS (va de la mano de los "breakpoints")
+
+		[@media querie (and|not|only) (media feature)]
+		
+
+		+ Ancho máximo
+			@media screen and (max-width:400px){
+				#my-element{
+					/*my styles*/
+				}
+			}
+
+
+		+ Ancho mínimo
+			@media screen and (min-width:401px){
+				#my-element{
+					/*my styles*/
+				}
+			}
+
+
+		+ Entre un ancho mínimo y ancho máximo
+			@media screen and (min-width:401px) and (max-width: 600px){
+				#my-element{
+					/*my styles*/
+				}
+			}
+
+
+		+ Definiendo ancho (mínimo ó máximo) y orientación
+			@media screen and (min-width:401px) and (orientation: landscape){
+				#my-element{
+					/*my styles*/
+				}
+			}
+
+			@media screen and (max-width:360px) and (orientation: portrait){
+				#my-element{
+					/*my styles*/
+				}
+			}
+
+
+
+
+::: Breakpoints - Puntos de quiebre :::
+Los puntos de quiebre son instancias en las que el contenido de la web, "responderá" a unas peticiones, para proporcionar al usuario la mejor disposición posible de la información.
+
+
+
+
+::: Mostrar/Ocultar contenido :::
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+	  $("#responsive-nav-button").click(function(){
+	      if($("nav").is(":hidden")){
+	         $("nav").slideDown('fast');
+	      }else{
+	         $("nav").slideUp('fast');
+	      }  
+	   });
+	</script>
+
+
+
+
