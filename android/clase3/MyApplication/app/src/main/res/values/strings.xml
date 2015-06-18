@@ -17,5 +17,6 @@
     <string name="title_activity_list_product">ListProduct</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_datos">datos</string>
 
 </resources>
