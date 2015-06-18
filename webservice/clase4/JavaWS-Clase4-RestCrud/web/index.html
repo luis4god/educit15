@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vinoteca REST CRUD</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    
+    <body onload="inicializar();">
+        <div class="menuSuperior">
+            <input type="text" id="txtBuscarPorNombre"/>
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnAgregar">Agregar</button>
+        </div>
+        
+        <div class="menuIzquierdo">
+            <ul id="listaVinos"></ul>
+        </div>
+      
+        <form id="formularioVino">
+            <div class="zonaCentral">
+                <label>Id:</label>
+                <input type="text" id="txtVinoId" disabled/>    
+            
+                <label>Nombre:</label>
+                <input type="text" id="txtVinoNombre"/>
+                
+                <label>A&ntilde;o:</label>
+                <input type="text" id="txtVinoAnio"/>
+                
+                <button id="btnGuardar">Guardar</button>
+                <button id="btnBorrar">Borrar</button>
+            </div>
+            <div class="zonaDerecha">
+                <label>Notas:</label>
+                <textarea id="txtVinoDescripcion"></textarea>
+            </div>
+        </form>        
+    </body>
+</html>
