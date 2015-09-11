@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='primeraClase'>
+<head>
+	<meta charset="UTF-8">
+	<title>Recurso Angular clase {{1+2}}</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script>
+	(function(){
+		angular.module('primeraClase',[]).controller('AlumnoController',function (){
+			this.nombre='Luis'
+			this.apellido='Rodriguez'
+		})
+		
+	})()
+
+	</script>
+</head>
+<body ng-controller="AlumnoController as a">
+	<div>
+		<label for="">Nombre</label>
+		<span>{{a.nombre}}</span>
+		<label for="">Apellido</label>
+		<span>{{a.apellido}}</span>
+	</div>
+</body>
+</html>
